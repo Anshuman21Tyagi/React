@@ -7,6 +7,10 @@ export default class HomeScreen extends React.Component{
    {
      this.props.navigation.navigate('GetStartedScreen');
    };    
+   goToGetLearnBasicsScreen=()=>
+   {
+     this.props.navigation.navigate('LearnBasicsScreen');
+   };
  
   render(){
   
@@ -25,8 +29,9 @@ export default class HomeScreen extends React.Component{
       onPress={()=> this.goToGetStartedScreen()}>
        <Text style={{fontSize:25}}>Get Started</Text>
      </TouchableOpacity>
-     <TouchableOpacity style={{marginLeft:30,marginTop:40}}>
-       <Text style={{color:'white',fontSize:25}}>Learn Basics</Text>
+     <TouchableOpacity style={{marginLeft:30,marginTop:43}}
+     onPress={()=>this.goToGetLearnBasicsScreen()}>
+       <Text style={{color:'white',fontSize:25}}>Learn Basics > </Text>
      </TouchableOpacity>
      </View>
      </View>

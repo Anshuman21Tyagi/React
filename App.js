@@ -3,6 +3,7 @@ import { StyleSheet, Text, View,Image,ImageBackground,TouchableOpacity} from 're
 import {createSwitchNavigator,createAppContainer} from "react-navigation";
 import HomeScreen from "./Screens/HomeScreen";
 import GetStartedScreen from "./Screens/GetStartedScreen";
+import LearnBasicsScreen from "./Screens/LearnBasicsScreen";
 
 export default class App extends React.Component{
  
@@ -19,6 +20,7 @@ export default class App extends React.Component{
 const AppNavigator=createSwitchNavigator({
         HomeScreen:HomeScreen,
         GetStartedScreen:GetStartedScreen,
+        LearnBasicsScreen:LearnBasicsScreen
 })
 
 const AppContainer=createAppContainer(AppNavigator);
